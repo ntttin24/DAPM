@@ -3,12 +3,12 @@ import Product from './Product'
 
 
 function ListProduct(props) {
-    const { products } = props;
+    const {HotSaleProducts} = props;
 
     return (
-        <div className="shopping-cart-list">
+        <div className="hotsale-listproduct">
             {
-                products.map((product, index) => (
+                HotSaleProducts.map((product, index) => (
                     <Product product={product} key={index}></Product>
                 ))
             }
